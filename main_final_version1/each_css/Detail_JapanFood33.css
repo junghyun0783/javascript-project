@@ -1,0 +1,71 @@
+/* 화면 50%으로 줄었을경우 (테블릿경우)*/
+@media (max-width:2200px) {
+	.leftarea{
+		width:50%;
+		height:100%;
+		float: left;
+
+		}
+.rightarea{
+			width:50%;
+			height:100%;
+			float: left;
+		}
+		.row1{
+		width: 100%;
+		height:100%;
+		height:600px;
+	}
+
+}
+
+
+@media (max-width:900px) {  
+	.leftarea{
+		clear: both;
+		width: 100%;
+		height: 100%;
+		
+	}
+	.rightarea{
+		clear: both;
+		width: 100%;
+		height: 100%;
+	}
+	.row1{
+		width: 100%;
+		height:100%;
+		height:600px;
+	}
+	.all{
+		height: 100%;
+		width: 100%;
+		height:600px;
+	}
+
+}
+
+@media (max-width:450px) {  
+	.leftarea{
+		clear: both;
+		width: 100%;
+		height: 100%;
+		
+	}
+	.rightarea{
+		clear: both;
+		width: 100%;
+		height: 100%;
+	}
+	.row1{
+		width: 100%;
+		height:100%;
+		height:600px;
+	}
+	.all{
+		height: 100%;
+		width: 100%;
+		height:600px;
+	}
+
+}

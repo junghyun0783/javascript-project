@@ -1,0 +1,4 @@
+.sub_fix{                /*offset 도착시 fix 클래스 추가*/
+	position:fixed;
+	top:70px;
+}

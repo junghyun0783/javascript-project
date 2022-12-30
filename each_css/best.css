@@ -1,0 +1,37 @@
+.border_img{                   /*best img border 클래스*/
+	border:3px solid #F6F6F6;
+	border-radius:10px;
+}
+.border_img p{                    /*img 위에 best 글씨 */
+	position:relative;
+	color:white;
+ 	width:90px;
+	background-color:grey;
+	opacity:0.4;
+ 	font-size:16px;
+}
+	#best1_p{
+		top:-354px;
+		left:-33.5%;
+		width:100px;
+		font-size:20px;
+	}
+	#best2_p{
+		top:-356px;
+		left:50.3%;
+	}
+	#best3_p{
+		top:-356px;
+		left:92%;
+	}
+	#best4_p{
+		top:-130px;
+		left:50.3%;
+	}
+	#best5_p{
+		top:-130px;
+		left:92%;
+}
+.best img{                    /*img radius 기능*/
+	border-radius:10px;
+}

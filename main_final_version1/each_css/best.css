@@ -1,0 +1,34 @@
+.border_img{                   /*best img border 클래스*/
+	border:3px solid #F6F6F6;
+	border-radius:10px;
+}
+
+@media (max-width: 1200px){
+}
+@media (max-width: 768px){
+	.border_img p{
+  		display:none;
+  	}
+  	.content_box{              /*best 이미지 전체 box */
+  		margin-left:0;
+		width:100%;
+	}
+	.best{                      /*이미지만 차지하는 box*/
+		position:relative;
+		top:30px;
+		left:0;
+		width:100%;
+		height:none !important;
+	}
+  	.best_one{
+		position:relative;		
+		width:100% !important;
+	
+	}
+    .best_etc{
+    	position:relative;
+    	top:40px;
+  		clear: both !important;
+  		width:100%;
+	}	
+}

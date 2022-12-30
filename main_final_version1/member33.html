@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pro1.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+		.pp{
+			width: 50px;
+		}
+		#address{
+			width: 400px;
+		}
+		.height{
+			height: 26px;
+		}
+		.modal-body{
+			margin-left: 10px;
+		}
+		input{
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	
+	<button data-toggle="modal" data-target="#myModal" class="btn btn-primary pull-right">회원가입</button>
+</div>
+	<!-- 동적으로 띄울 Modal 준비 -->
+<div id="myModal" class="modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">&times;</button>
+				<center><h3>회원 가입</h3></center>
+			</div>
+			<div class="modal-body">
+			<div class="row">
+			<div class="col-xs-3">
+			<label for="name">이름:</label><br>
+			<label for="userid">아이디:</label><br>
+
+			<label for="password">비밀번호:</label><br>
+			<label for="email">E-mail:</label><br>
+			<label for="phone">휴대폰번호 :</label><br>
+			<label for="address">주소:</label><br>
+			<label for="comment">추천인:</label><br><br>
+			<label for="sex">성별:</label><br>
+</div>
+<div class="col-xs-9">
+<input type="text" name="name"><br>
+<input type="text" name="userid">&nbsp;&nbsp;&nbsp;<button>중복확인</button><br>
+<input type="password" name="pwd"><br>
+<input type="text" id="email" name="email"/>
+	@
+	
+	<select name="em" id="em" class="height">
+		
+		<option value="1" selected>naver.com</option>
+		<option value="2">hanmail.net</option>
+		<option value="3">dreamwiz.com</option>
+		<option value="4">gmail.com</option>
+		<option value="5">hotmail.com</option>
+		
+	</select>
+	<button>중복확인</button>
+<br/>
+<input type="text" name="phonenumber"><br>
+<input type="text" name="address" id="address"><br>
+<input type="text" name="recommand"><br><br>
+남자<input type="radio" name="sex" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;여자<input type="radio" name="sex"><br>
+</div>
+</div>
+</center>
+			</div>
+			<div class="modal-footer">
+				<button id="del" class="btn btn-success" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">회원가입</button>
+				<button class="btn btn-danger" data-dismiss="modal">취소</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 축하메세지 안쪽모달 -->
+<div id="myModal2" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">&times;</button>
+			
+			</div>
+			<div class="modal-body">
+				<h3>*********회원가입을 축하합니다*********</h3>
+			</div>
+			<div class="modal-footer">
+				<button id="cancle" class="btn btn-success" data-dismiss="modal">확인</button>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+
+
+$("#cancle").click(function(){
+	data-dismiss("modal");
+});
+</script>
+
+
+</body>
+</html>

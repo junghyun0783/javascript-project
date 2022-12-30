@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="each_css/place.css"/>
+    <link rel="stylesheet" href="each_css/catalog.css"/>
+    <link rel="stylesheet" href="each_css/sub_catalog.css"/>
+    <link rel="stylesheet" href="each_css/best.css"/>
+    <link rel="stylesheet" href="each_css/board33.css">
+	<meta charset="UTF-8">
+    <title>board.html</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<style>
+        @font-face{font-family:'12롯데마트행복Medium 보통'; src:url('each_css/Lotte_Medium.ttf')}
+        
+        @media (max-width: 1200px){
+            .all{
+                width: 1200px;
+            }
+        }
+
+        body{                     /*카탈로그 공간 margin-top*/
+            margin-top:70px; 
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        #myCarousel img{
+            width:100%;
+            height:600px;
+        }
+        .all {
+            margin-top: 200px;
+        }
+
+	</style>
+</head>
+<body>
+<div class="all"> <!--page 꽉찬 화면-->
+	<div class="catalog navbar-fixed-top">
+        <div class="logo">
+            <a href="#" id="logolink">Sabio</a>
+        </div>                <!--page 꽉찬 화면-->
+
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">한식</a>
+        </div>
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">일식</a>
+        </div>
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">중식</a>
+        </div>
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">게시판</a>
+        </div>
+
+        <div class="searchBar">                 <!-- 검색창 -->
+            <input type="text">                     <!-- 검색창 -->
+            <button>검색</button>
+            <span>
+            <a href="">로그인</a>
+            </span>
+            <span>
+                <a href="">회원가입</a>
+            </span>
+            
+            <span>
+                <a href="">고객센터</a>
+            </span>
+        </div>
+<center>
+    <div class="a">
+        <table id ="td" class="table table-hover" style="width:80%;">
+            <thead>
+                <tr>
+                    <th><center>제목</center></th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회</th>
+                    <th>좋아요</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>여기서 스테이크먹으면 딴데가서 못먹어요.강추!!</td>
+                    <td>김구라</td>
+                    <td>2016.10.11</td>
+                    <td>4668</td>
+                    <td>344</td>
+                </tr>
+                <tr>
+                    <td>티비보고 처음온 맛집 정말 가성비최고!</td>
+                    <td>맛집사냥꾼</td>
+                    <td>2016.10.04</td>
+                    <td>3114</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>스테이크가 원래 이런가요?입에서 살살녹네요</td>
+                    <td>고기쿰척쿰척</td>
+                    <td>2016.09.21</td>
+                    <td>2222</td>
+                    <td>947</td>
+                </tr>
+                 <tr>
+                    <td>여친이 파스타를 좋아해서 갔는데 너무 맛있대요!</td>
+                    <td>내여친김태희</td>
+                    <td>2016.09.18</td>
+                    <td>1648</td>
+                    <td>6</td>
+                </tr>
+                 <tr>
+                    <td>리조또 넌 감동이었어ㅠㅠ</td>
+                    <td>화이팅에이콘</td>
+                    <td>2016.09.09</td>
+                    <td>6666</td>
+                    <td>78</td>
+                </tr>
+                 <tr>
+                    <td>티비만 보고 갔는데 생각보다 너무 불친절하네요...</td>
+                    <td>맛보단서비스</td>
+                    <td>2016.09.01</td>
+                    <td>58</td>
+                    <td>3</td>
+                </tr>
+                 <tr>
+                    <td>먹지마세요 여친에게 양보하세요 마쉬쑴</td>
+                    <td>나란놈이란</td>
+                    <td>2016.09.01</td>
+                    <td>997</td>
+                    <td>88</td>
+                </tr>
+                 <tr>
+                    <td>샐러드를 싫어하는 제가 샐러드를 먹기시작했어요 ㅎㅎ</td>
+                    <td>샐러드도둑년</td>
+                    <td>2016.08.22</td>
+                    <td>345</td>
+                    <td>648</td>
+                </tr>
+                 <tr>
+                    <td>맛도 맛이지만 가성비는 쵝오!</td>
+                    <td>가성비따진년</td>
+                    <td>2016.08.08</td>
+                    <td>975</td>
+                    <td>64</td>
+                </tr>
+                 <tr>
+                    <td>Hi.im touched.Dishes serviced here is very delicious.</td>
+                    <td>외쿸인</td>
+                    <td>2016.07.08</td>
+                    <td>34</td>
+                    <td>8878</td>
+                </tr>
+                <tr>
+                    <td>벌써 여친과 여기만 3번째와요ㅎㅎ 빠네 넘나 맛나는것!</td>
+                    <td>여친줜나빠네</td>
+                    <td>2016.07.06</td>
+                    <td>354</td>
+                    <td>8878</td>
+                </tr>
+                <tr>
+                    <td>저만 그런가요 뭔가 비린내가 나는듯...</td>
+                    <td>생선비린내</td>
+                    <td>2016.07.01</td>
+                    <td>3754</td>
+                    <td>88778</td>
+                </tr>
+               <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               </tr>
+            </tbody>
+        </table>
+    </div>
+        <div id ="gg" class="hidden">
+            <span>제목:</span>
+            <input type="text" style="width:500px;"/><br>
+            <span>내용:</span>
+            <input type="text" style="height:500px; width: 700px;">
+        </div>
+        </center>
+   <div class="apple">
+        <button id="write" class="btn btn-default glyphicon glyphicon-pencil col-xs-push-10" style="font-weight: bold">글쓰기</button>
+        <div style="text-align: center; font-weight: bold;">
+        <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+        <!-- <span >1  2  3  4  5  6</span> -->
+        <!-- <span class="glyphicon glyphicon-chevron-right"></span><br> -->
+        <ul class="pagination pagination-sm">
+        <li><a href="javascript:">&laquo;</a></li>
+        <li class=""><a href="#one">1</a></li>
+        <li><a href="#two">2</a></li>
+        <li><a href="#three">3</a></li>
+        <li><a href="#four">4</a></li>
+        <li><a href="#five">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+
+<div class="last">
+        <select  name="serch" id="serch" style="height:26px;" >
+        
+        <option value="11" selected>제목+내용</option>
+        <option value="22">제목만</option>
+        <option value="33">작성자</option>
+        <option value="44">댓글내용</option>
+        <option value="55">댓글작성자</option>
+        
+    </select>
+        <input type="text" name="serch text" placeholder="검색할내용 입력">
+        <button type="submit" class="btn-info" id="serchbtn">검색</button>
+
+
+        </div>
+       </div>
+       </div>
+       </div>
+       </div>
+<script>
+    $("li > a").click(function(){
+            $(this).parent()
+            .child()
+            .addClass("btn btn-primary")
+            .siblings()
+            .removeClass("btn btn-primary");
+           
+</script>
+       </body>
+       </html>

@@ -1,0 +1,33 @@
+.sub_fix{                /*offset 도착시 fix 클래스 추가*/
+	position:fixed;
+	top:70px;
+}
+.sub_national{  
+	position: absolute;         
+	width: 100%;
+	display: none;
+	text-align: center;
+	font-size: 35px;
+}
+@media (max-width: 1200px) {
+ 	.sub_catalog{
+   		display:none !important;
+   }
+}
+@media (max-width: 900px) {
+	.border_img p{
+  		display:none;
+  	}
+ 	.best_one{
+ 		position:relative;
+ 		left:-50px;
+ 		width:600px;
+ 	}
+    .best_etc{
+    	position:relative;
+    	top:60px;
+  		clear: both !important;
+  		left:-50px;
+  		width:600px;
+ 	}
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>integration_version2.html</title>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.smooth-scroll.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="each_css/place.css"/>
+	<link rel="stylesheet" href="each_css/catalog.css"/>
+	<link rel="stylesheet" href="each_css/sub_catalog.css"/>
+	<link rel="stylesheet" href="each_css/best.css"/>
+	<link rel="stylesheet" href="each_css/hansik.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<link rel="stylesheet" href="each_css/food-Fotorama.css"/>  <!-- 중현 기본 css-->
+	 <link rel="stylesheet" href="each_css/food-Fotorama-change.css"/>         <!-- 중현 반응형 css -->
+
+	<style>
+        @font-face{font-family:'12롯데마트행복Medium 보통'; src:url('each_css/Lotte_Medium.ttf')}
+
+        body{                     /*카탈로그 공간 margin-top*/
+            margin-top:70px; 
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        #myCarousel img{
+            width:100%;
+            height:600px;
+        }
+	</style>
+</head>
+<body>
+	<div class="all"> <!--page 꽉찬 화면-->
+	    <div class="catalog navbar-fixed-top">
+            <div class="logo">
+                <a href="#" class="logolink">Sabio</a>
+            </div>                <!--page 꽉찬 화면-->
+            <div class="catalogbar smoothSS" id="korean">
+                <a href="#TT" class="logolink">한식</a>
+            </div>
+            <div class="catalogbar smoothSS" id="Chinese">
+                <a href="#TT" class="logolink">중식</a>
+            </div>
+            <div class="catalogbar smoothSS" id="Japanese">
+                <a href="#TT" class="logolink">일식</a>
+            </div>
+            <div class="catalogbar">
+                <a href="#" class="cataloglink">게시판</a>
+            </div>
+
+            <div class="searchBar">                 <!-- 검색창 -->
+                <input type="text"/>                     <!-- 검색창 -->
+                <button>검색</button>
+                <span>
+                <a href="">로그인</a>
+                </span>
+                <span>
+                    <a href="">회원가입</a>
+                </span>
+                <span>
+                    <a href="">고객센터</a>
+                </span>
+            </div>
+            <div class="boxbox">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-info">Menu</button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right smoothSS">
+                    <li><a href="#TT">한식 (korean food)</a></li>
+                    <li><a href="#TT">일식 (japanese food)</a></li>
+                    <li><a href="#TT">중식 (Chinese food)</a></li>
+                    <li><a href="#TT">게시판</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><input type="text" id="searchBar2"/><button>검색</button></li>
+                  </ul>
+                </div>
+            </div>
+        </div>   <!--카탈로그 공간-->
+
+	<!-- 중현이 포토라마 지리는거.... -->
+	     <div class="main-picture" id="visualBn" style="border: 0px;"> 
+	     <!--이미지 메뉴 초이스 공간. -->
+	        <div class="picture-screen" id="one">
+	            <img src="images/food1.png"/>
+	        </div>
+	        <div class="picture-screen" id="two">
+	            <img src="images/food2.png"/>
+	        </div>
+	        <div class="picture-screen" id="three">
+	            <img src="images/food3.png"/>
+	        </div>
+	        <div class="picture-screen" id="four">
+	            <img src="images/food4.png"/>
+	        </div>
+	    </div>
+	    
+	    <!-- 중간에 fix되어서 내려가는 가로bar -->
+        <div class="sub_catalog" id="TT">
+	        <div class="catalogsub">
+	            The food of the world 
+	        </div>
+	        <div class="Korean1">한식 눌렀을때
+	            <span>
+	                <a href="menu_hansik.html" class="logolink">밥</a>
+	            </span>
+	            <span>
+	                <a href="#" class="logolink">국</a>
+	            </span>
+	            <span>
+	                <a href="#" class="logolink">찌개</a>
+	            </span>
+	            <span>
+	                <a href="#" class="logolink">기타</a>
+	            </span>
+	        </div>
+	        <div class="Chinese1">중식 눌렀을때
+	            <span>
+	                <a href="" class="logolink">대충1</a>
+	            </span>
+	            <span>
+	                <a href="" class="logolink">대충2</a>
+	            </span>
+	            <span>
+	                <a href="" class="logolink">대충3</a>
+	            </span>
+	            <span>
+	                <a href="" class="logolink">대충4</a>
+	            </span>
+	        </div>
+	        <div class="Japanese1">일식 눌렀을때
+	            <span>
+	                <a href="" class="logolink">대충1</a>
+	            </span>
+	            <span>
+	                <a href="" class="logolink">대충2</a>
+	            </span>
+	            <span>
+	                <a href="" class="logolink">대충3</a>
+	            </span>
+	            <span>
+	                <a href="" class="logolink">대충4</a>
+	            </span>
+	        </div>
+	    </div>    <!--sub 카탈로그 공간-->
+	
+		<div class="menu_inner_frame">
+			<div class="menu_inner_total_frame">
+				<div class="menu_inner_left_frame">
+					<div class="menu_inner_left_top">
+						밥 류
+					</div>
+					<div class="menu_inner_left_bottom">
+						<ul>
+							<li><a href="#rice_box_1">콩나물밥</a></li>
+							<li><a href="#rice_box_2">제육덮밥</a></li>
+							<li><a href="#rice_box_3">비빔밥</a></li>
+							<li><a href="#rice_box_4">오징어덮밥</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu_inner_right_frame">
+					<div class="rice_box" id="rice_box_1">
+						<div class="rice_img"><img src="images/콩나물밥.png" alt="콩나물밥"></div>
+						<div class="rice_txt"><img src="images/콩나물밥설명.jpg" alt="콩나물밥 설명"></div>
+					</div>
+
+					<div class="blank"><div class="line"></div></div>
+					<div class="rice_box" id="rice_box_2">
+						<div class="rice_img"><img src="images/제육덮밥.png" alt="제육덮밥"></div>
+						<div class="rice_txt"><img src="images/제육덮밥설명.jpg" alt="제육덮밥설명"></div>
+					</div>
+
+					<div class="blank"><div class="line"></div></div>
+					<div class="rice_box" id="rice_box_3">
+						<div class="rice_img"><img src="images/비빔밥.jpg" alt="비빔밥"></div>
+						<div class="rice_txt"><img src="images/비빔밥설명.jpg" alt="비빔밥설명"></div>
+					</div>
+
+					<div class="blank"><div class="line"></div></div>
+					<div class="rice_box" id="rice_box_4">
+						<div class="rice_img"><img src="images/오징어덮밥.png" alt="오징어덮밥"></div>
+						<div class="rice_txt"><img src="images/오징어덮밥설명.jpg" alt="오징어덮밥설명"></div>
+					</div>
+
+					<div class="blank"><div class="line"></div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	    $(window).scroll(function(){
+	        if($(this).scrollTop() >= 600){                        //sub_catalog offset 도착시 fixed
+	            $(".sub_catalog").addClass('sub_fix');
+	            $(".content_box").css("margin-top","50px");
+	        }
+	        else{
+	            $(".sub_catalog").removeClass('sub_fix');
+	            $(".content_box").css("margin-top","0");
+	        }
+	    });
+
+	    $(window).scroll(function(){
+	        if($(this).scrollTop() >= 600){                        //sub_catalog offset 도착시 fixed
+	            $(".menu_inner_left_frame").addClass('left_fix');
+	            // $(".content_box").css("margin-top","600px");
+	        }
+	        else{
+	            $(".menu_inner_left_frame").removeClass('left_fix');
+	            // $(".content_box").css("margin-top","0");
+	        }
+	    });
+
+	    var reco_img = 0;   //recommend page 초기값                                      
+	    $(".rc_leftBtn").click(function(){                         //recommend 왼쪽버튼시 이동
+	        if(reco_img == 0){
+	            return;
+	        }
+	        else{
+	            reco_img -= 1;
+	            $(".rc_img").animate({"left":"+=34%"},1000);
+	        }
+	    });
+	    $(".rc_rightBtn").click(function(){                      //recommend 오른쪽버튼시 이동
+	        if(reco_img == 2){
+	            return;
+	        }
+	        else{
+	            reco_img += 1;
+	            $(".rc_img").animate({"left":"-=34%"},1000);
+	        }
+	    });
+	    $("#korean").click(function(){            // 메인BAR에 한식 누르면 sub_catalog로 이동
+	        $(".Korean1").siblings().hide();
+	        $(".Korean1").css({"display":"block","color":"blue"});
+	    });
+	    $("#Chinese").click(function(){         // 메인BAR에 중식 누르면 sub_catalog로 이동
+	        $(".Chinese1").siblings().hide();
+	        $(".Chinese1").css({"display":"block","color":"blue"});
+	    });
+	    $("#Japanese").click(function(){        // 메인BAR에 일식 누르면 sub_catalog로 이동
+	        $(".Japanese1").siblings().hide();
+	        $(".Japanese1").css({"display":"block","color":"blue"});
+	    });
+
+		// 메인BAR smoothScroll
+	    $(".smoothSS a").smoothScroll({offset:-70});
+
+	    //마우스 오버시 이벤트 발생
+	    $("#one").mouseover(function(){
+	        $("#two").css("left","40%");
+	        $("#three").css("left","60%");
+	        $("#four").css("left","80%");
+	    });
+	    $("#two").mouseover(function(){
+	        $("#two").css("left","20%");
+	        $("#three").css("left","60%");
+	        $("#four").css("left","80%");
+	    });
+	    $("#three").mouseover(function(){
+	        $("#two").css("left","20%");
+	        $("#three").css("left","40%");
+	        $("#four").css("left","80%");
+	    });
+	    $("#four").mouseover(function(){
+	        $("#two").css("left","20%");
+	        $("#three").css("left","40%");
+	        $("#four").css("left","60%");
+	    });
+	    //마우스 아웃시 이벤트 발생 
+	    $("#one").mouseout(function(){
+	        $("#two").css("left","25%");
+	        $("#three").css("left","50%");
+	        $("#four").css("left","75%");
+	    });
+	    $("#two").mouseout(function(){
+	        $("#two").css("left","25%");
+	        $("#three").css("left","50%");
+	        $("#four").css("left","75%");
+	    });
+	     $("#three").mouseout(function(){
+	        $("#two").css("left","25%");
+	        $("#three").css("left","50%");
+	        $("#four").css("left","75%");
+	    });
+	      $("#four").mouseout(function(){
+	        $("#two").css("left","25%");
+	        $("#three").css("left","50%");
+	        $("#four").css("left","75%");
+		});
+
+		$(".menu_inner_left_bottom a").smoothScroll({offset:-120, speed:1000});
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.logo{
+	width: 25%;
+	padding-left: 20px;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 40px;
+	float:left;
+}
+.logolink{
+	text-decoration:none !important;
+}
+.catalogbar{
+	float:left;
+	width:10%;
+	font-size: 35px;
+	font-family: "12롯데마트행복Medium 보통";
+}
+.cataloglink{
+	text-decoration:none !important;
+	color: black !important;
+}
+.searchBar{
+	float:left;
+	padding-top: 13px;
+	width: 35%;
+}
+.boxbox{
+	display: none;
+	float: right;
+	padding-top: 10px;
+	margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+ 	.catalogbar{
+ 		display:none;
+ 	}
+ 	.searchBar{
+ 		display:none;
+ 	}
+ 	.boxbox{
+ 		display:block;
+ 	}
+ 	.notice_1{
+		width: 50% !important;
+ 	}
+ 	.notice_2{
+ 		float:left;
+ 	}
+ 	.notice_3{
+ 		position: relative;
+ 		top:-200px;
+ 		left:-60px;
+ 		width: 40% !important;
+ 	}
+}
+@media (max-width: 900px) {
+
+
+}
+.Korean1{
+	width: 100%;
+	position: absolute;
+	display: none;
+	text-align: center;
+	font-size: 35px;
+}
+.Chinese1{
+	width: 100%;
+	position: absolute;
+	display: none;
+	text-align: center;
+	font-size: 35px;
+}
+.Japanese1{
+	width: 100%;
+	position: absolute;
+	display: none;
+	text-align: center;
+	font-size: 35px;
+}

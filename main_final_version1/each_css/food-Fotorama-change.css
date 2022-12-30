@@ -1,0 +1,57 @@
+        @media (max-width:900px) {  /* 화면 50%으로 줄었을경우 (테블릿경우)*/
+             #visualBn{
+                width: 100%;
+                height: 300px;
+            }
+            .picture-screen{
+
+                width: 30%;
+                height: 300px;
+            }
+            .menu_inner_left_frame{  /* 왼쪽 리모콘 50%줄었을때*/
+                /*position: relative;*/
+                width:100px;
+                height:15%;
+                display: none;
+            }
+
+            .menu_inner_left_top{    /* 리모콘 한식 text*/
+                font-size: 20px;
+            }
+            .menu_inner_left_bottom ul li{   /* 리모콘 메뉴듈*/
+                font-size: 10px;
+            }
+
+            .menu_inner_right_frame{
+                width: 600px;
+                height: 3000px;
+            }
+
+            .menu_inner_total_frame{
+                width: 800px;
+                margin-left: -150px;
+            }
+            .blank{
+                display: none;
+            }
+            .rice_txt{
+                width: 100%;
+                clear:both;
+            }
+            .rice_img{
+                clear:both;
+                width: 100%;
+            }
+
+        }
+        /* 화면이 25%로 줄었을경우 (스마트폰경우)*/
+       /* @media (max-width:450px) {  
+             #visualBn{
+                width: 100%;
+                height: 200px;
+            }
+            .picture-screen{
+                width: 15%;
+                height: 200px;
+            }
+        }*/

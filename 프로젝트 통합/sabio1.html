@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Main.html</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<link rel="stylesheet" href="each_css/place.css">
+	<link rel="stylesheet" href="each_css/click_best.css">
+	<link rel="stylesheet" href="each_css/recommend.css">
+	<link rel="stylesheet" href="each_css/ingredient_etc.css">
+	<link rel="stylesheet" href="each_css/main_top.css">
+	<link rel="stylesheet" href="each_css/main_catalog.css">
+	<link rel="stylesheet" href="each_css/main_bottom.css">
+
+</head>
+<body>
+	<div class="container-fulid">
+		<div class="row">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-8" id="main_top">
+				<a href="http://www.naver.com">
+					<img src="images/1154.jpg"/>	
+				</a>
+			</div>
+			<div class="col-xs-2">
+				<a href="">회원가입</a>
+				<a href="">로그인</a>
+				<a href="">고객센터</a>
+			</div>
+		</div> 
+	</div>
+
+	<div class="container">
+		<div class="row rowtop">
+			<div class="col-xs-8" id="main_catalog">
+				<div class="row">
+					<div class="col-xs-2">
+				
+					</div>
+					<div class="col-xs-2 catalog1" id="hans" url="http://www.naver.com">
+						<strong>한식</strong>
+					</div>
+					<div class="col-xs-2 catalog1" url="#">
+						<strong>일식</strong>
+					</div>
+					<div class="col-xs-2 catalog1" url="#">
+						<strong>중식</strong>
+					</div>
+					<div class="col-xs-2 catalog1" url="#">
+						<strong>양식</strong>
+					</div>
+					<div class="col-xs-2 catalog1"  url="#">
+						<strong>게시판</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 input-group" id="main_search">
+				<div class="input-group searchline">
+			      <input type="text" class="form-control" aria-label="...">
+			      <div class="input-group-btn">
+			      	<button class="btn btn-default" type="button">
+			      	<span class="glyphicon glyphicon-search"></span>
+			      	</button>
+			        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">옵션 <span class="caret"></span></button>
+			        <ul class="dropdown-menu dropdown-menu-right">
+			          <li><a href="#">한식</a></li>
+			          <li><a href="#">중식</a></li>
+			          <li><a href="#">양식</a></li>
+			          <li><a href="#">일식</a></li>
+			          <li><a href="#">게시판</a></li>
+			        </ul>
+			    </div>
+
+			</div>
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-xs-12" id="main_notice">
+				<div class="col-xs-11">
+					
+				</div>
+
+				<div class="col-xs-1">
+					<div class="navBOX hidden-lg">
+				    	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+				        <ul class="dropdown-menu dropdown-menu-right">
+					        <li><a href="#">한식</a></li>
+					        <li><a href="#">중식</a></li>
+					        <li><a href="#">양식</a></li>
+					        <li><a href="#">일식</a></li>
+					        <li><a href="#">게시판</a></li>
+				        </ul>
+			    	</div>
+				</div>
+			</div>
+		</div>
+
+
+	
+
+
+
+
+		<div class="row">
+			<!-- 베스트 클릭 메뉴 설명 -->
+			<!-- <div class="col-xs-4" id="main_bestclick_text">
+				<ul>
+					<li data-index="0">한식 베스트</li>
+					<li data-index="1">중식 베스트</li>
+					<li data-index="2">일식 베스트</li>
+					<li data-index="3">양식 베스트</li>
+				</ul>
+			</div> -->
+			<div class="col-xs-12" id="main_bestclick_photo">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+					<!-- <ol class="carousel-indicators">
+						<li id="korean_best" data-target="#myCarousel" data-slide-to="0"></li>
+						<li id="chinese_best" data-target="#myCarousel" data-slide-to="1"></li>
+						<li id="japanese_best" data-target="#myCarousel" data-slide-to="2"></li>
+						<li id="western_best" data-target="#myCarousel" data-slide-to="3"></li>
+					</ol> -->
+					<div class="carousel-inner">
+						<div data-index="0" class="item active">
+							<img src="images/top01.jpg" onclick="location.href='images/top01.jpg'"/>
+						</div>
+						<div data-index="1" class="item">
+							<img src="images/top02.jpg" onclick="location.href='images/top02.jpg'"/>
+						</div>
+						<div data-index="2" class="item">
+							<img src="images/top03.jpg" onclick="location.href='images/top03.jpg'"/>
+						</div>
+						<div data-index="3" class="item">
+							<img src="images/top04.jpg" onclick="location.href='images/top04.jpg'"/>
+						</div>
+					</div>
+					<!-- 이전, 다음 control UI -->
+					<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">이전</span>
+					</a>
+					<a href="#myCarousel" class="right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">다음</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12" id="blank_height"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4" id="recommend_cook">
+				<img src="images/top01.jpg" onclick="location.href='images/top01.jpg'"/>데일리 추천 요리
+			</div>
+			<div class="col-xs-2" id="blank_width"></div>
+			<div class="col-xs-4" id="recommend_restaurant">
+				<img src="images/top02.jpg" onclick="location.href='images/top02.jpg'"/>데일리 추천 맛집
+			</div>
+			<div class="col-xs-2" id="blank_width"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12" id="blank_height"></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4" id="ingredient">
+				<img src="images/top03.jpg" onclick="location.href='images/top03.jpg'"/>재료 손질 보관법
+			</div>
+			<div class="col-xs-2" id="blank_width"></div>
+			<div class="col-xs-4" id="etc">etc</div>
+			<div class="col-xs-2" id="blank_width"></div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-2" id="main_bottom">바닥</div>
+			<div class="col-xs-8" id="main_bottom">
+				<a href="#">Email us</a>
+			</div>
+			<div class="col-xs-2" id="main_bottom">바닥</div>
+		</div>
+	</div>
+
+
+<script>
+
+	$(".catalog1").click(function(){
+		var url = $(this).attr("url");
+		location.href = url;
+	});
+
+	$("#searchB").click(function(){
+		$(".search_txt").focus()
+	});
+
+	// $("#main_bestclick_text li").on("mouseenter", function(){
+	// 		var index=$(this).attr("data-index");
+	// 		$("#myCarousel").carousel(parseInt(index));
+	// 		$("#myCarousel").carousel("pause");
+	// 	});
+
+	// $("#main_bestclick_text li").on("mouseleave", function(){
+	// 	$("#myCarousel").carousel("cycle");
+	// });
+</script>
+</body>
+</html>

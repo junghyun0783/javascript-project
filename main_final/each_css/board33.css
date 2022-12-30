@@ -1,0 +1,22 @@
+.a{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+
+@media (max-width:450px) {
+	.a{
+		width: 100%;
+		height: 500px;
+
+
+	}
+	#td{
+		width: 100%;
+		height: 300px;
+	}
+	#write{
+		left:70%;
+	}
+}

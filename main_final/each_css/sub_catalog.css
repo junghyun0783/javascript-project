@@ -1,0 +1,25 @@
+.sub_fix{                /*offset 도착시 fix 클래스 추가*/
+	position:fixed;
+	top:70px;
+}
+.sub_national{  
+	position:absolute;        
+	width:100%;
+	display:none;
+	font-size:35px;
+	font-family: 'Bungee Inline', cursive; 
+}
+.sub_catalText{
+	margin-left: 150px;
+	color:black;
+	font-size:28px;
+	font-family:"12롯데마트행복Medium 보통";
+}
+
+@media (max-width: 1200px) {
+ 	.sub_catalog{
+   		display:none !important;
+   }
+}
+@media (max-width: 768px) {
+}

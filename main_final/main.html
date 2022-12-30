@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="each_css/place.css"/>
+    <link rel="stylesheet" href="each_css/catalog.css"/>
+    <link rel="stylesheet" href="each_css/sub_catalog.css"/>
+    <link rel="stylesheet" href="each_css/best.css"/>
+    <link rel="stylesheet" href="each_css/recommend.css"/>
+    <link rel="stylesheet" href="each_css/notice.css"/>
+    <link rel="stylesheet" href="each_css/footer.css"/>
+	<meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet"/>
+	<style>
+        @font-face{font-family:'12롯데마트행복Medium 보통'; src:url('each_css/Lotte_Medium.ttf')}
+
+        body{                     /*카탈로그 공간 margin-top*/
+            margin-top:70px; 
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        #myCarousel img{
+            width:100%;
+        }
+	</style>
+</head>
+<body>
+<div class="all"> <!--page 꽉찬 화면-->
+    <div class="catalog navbar-fixed-top"> <!--카탈로그 공간-->
+        <div class="logo"> <!--page 꽉찬 화면-->
+            <a href="#" class="logolink">Sabio</a>
+        </div>                
+        <div class="catalogbar smoothSS" id="korean">
+            <a href="#TT" class="logolink">한식</a>
+        </div>
+        <div class="catalogbar smoothSS" id="Chinese">
+            <a href="#TT" class="logolink">중식</a>
+        </div>
+        <div class="catalogbar smoothSS" id="Japanese">
+            <a href="#TT" class="logolink">일식</a>
+        </div>
+        <div class="catalogbar">
+            <a href="board33.html" class="cataloglink">게시판</a>
+        </div>
+
+        <div class="searchBar">                 <!-- 검색창 -->
+            <input type="text"/>          
+            <button>검색</button>
+            <span>
+            <a href="">로그인</a>
+            </span>
+            <span>
+                <a data-toggle="modal" data-target="#myModal" href="">회원가입</a>
+            </span>
+            <span>
+                <a href="">고객센터</a>
+            </span>
+        </div>
+        <div class="boxbox">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Menu</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right smoothSS menu_fix">
+                <div class="catalogsub">
+                     The food of the world 
+                </div>
+                <li>한식 (KOREA FOOD)
+                    <ul>
+                        <li>밥 류</li>
+                        <li>면 류</li>
+                        <li>찌개 류</li>
+                        <li>기 타</li>
+                    </ul>
+                </li>
+                <li>일식 (JAPANESE FOOD)
+                     <ul>
+                        <li>밥 류</li>
+                        <li>면 류</li>
+                        <li>찌개 류</li>
+                        <li>기 타</li>
+                    </ul>
+                </li>
+                <li>중식 (CHINESE FOOD)
+                 <ul>
+                        <li>밥 류</li>
+                        <li>면 류</li>
+                        <li>찌개 류</li>
+                        <li>기 타</li>
+                    </ul>
+                </li>
+                <li>게시판</li>
+              </ul>
+            </div>
+        </div>
+    </div><!--카탈로그 공간-->
+    <div class="mainImg_box" > <!--MainImg 공간-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/teamimage5.jpg"/>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/teamimage2.jpg"/>
+                    <div class="carousel-caption">              
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/teamimage4.jpg"/>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <!-- 이전, 다음 control UI -->
+           <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+               <span class="sr-only">이전</span>
+           </a>
+           <a href="#myCarousel" class="right carousel-control" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+               <span class="sr-only">다음</span>
+           </a>
+        </div>
+    </div> <!--MainImg 공간-->
+    <div class="sub_catalog" id="TT"> <!--sub 카탈로그 공간-->
+        <div class="Korean1 sub_national">KOREA FOOD
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">밥 류</a>
+            </span>
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">국 류</a>
+            </span>
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">찌개 류</a>
+            </span>
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">기 타</a>
+            </span>
+        </div>
+        <div class="Chinese1 sub_national">CHINA FOOD
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">면 류</a>
+            </span>
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">식사 류</a>
+            </span>
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">돼지고기 류</a>
+            </span>
+            <span>
+                <a href="integration_version2.html" class="logolink sub_catalText">기 타</a>
+            </span>
+        </div>
+        <div class="Japanese1 sub_national">JAPAN FOOD
+            <span>
+                <a href="Detail_JapanFood33.html" class="logolink sub_catalText">식사 류</a>
+            </span>
+            <span>
+                <a href="Detail_JapanFood33.html" class="logolink sub_catalText">면 류</a>
+            </span>
+            <span>
+                <a href="Detail_JapanFood33.html" class="logolink sub_catalText">생선 류</a>
+            </span>
+            <span>
+                <a href="Detail_JapanFood33.html" class="logolink sub_catalText">기 타</a>
+            </span>
+        </div>
+    </div><!--sub 카탈로그 공간-->
+    <div class="content_box"> <!--전체 content 공간 -->
+        <div class="best"> <!--best img 공간-->
+            <div class="best_one border_img">  <!--best 1 img 공간 -->
+                <img src="images/teamimage6.jpg"/>
+            </div>
+            <div class="best_etc">           <!-- best etc img 공간 -->
+                <div class="best_two border_img">
+                    <img src="images/aaa.jpg"/>
+                </div>
+                <div class="best_three border_img">
+                    <img src="images/aaaa.jpg"/>
+                    </div>
+                <div class="best_four border_img">
+                    <img src="images/aaaaa.jpg"/>
+                    </div>
+                <div class="best_five border_img">
+                    <img src="images/aaaaaa.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div> <!--전체 content 공간 -->
+    <div class="recommend"> <!-- 추천 음식 img 공간 -->
+        <div class="reco_txt"><center><p class="today">TODAY</p><p>추천요리</p></center></div>
+        <div class="rc_visibleImg">
+            <img class="reco_img1 rc_img" src="images/a2.jpg"/>
+                <div class="carousel-caption">
+                   <span class="glyphicon glyphicon-chevron-left rc_leftBtn"></span>
+                </div>
+            <img class="reco_img2 rc_img" src="images/teamimage5.jpg"/>
+            <img class="reco_img3 rc_img" src="images/teamimage3.jpg"/>
+            <img class="reco_img4 rc_img" src="images/a1.jpg"/>
+            <img class="reco_img5 rc_img" src="images/a4.jpg"/>
+                <div class="carousel-caption">
+                   <span class="glyphicon glyphicon-chevron-right rc_rightBtn"></span>
+                </div>
+        </div>
+    </div><!-- 추천 음식 img 공간 -->
+    <div class="notice_box"><!-- 공지사항 및 알림 공간 -->
+        <div class="notice_1">
+            <strong>
+                <p>[자유게시판]
+                    <span id="MOREBtn1">
+                        <a href="board33.html">MORE+</a>
+                    </span>
+                </p>
+            </strong>
+            <div>
+                <a href="#">·&nbsp;[유머]</a>가나다라마바사아자차
+            </div>
+            <div>
+                <a href="#">·&nbsp;[유머]</a>아자차카타파하
+            </div>
+            <div>
+                <a href="#">·&nbsp;[공지]</a>중현이 목요일 도망감
+            </div>
+            <div>
+                <a href="#">·&nbsp;[팁]</a>ㅈㄷㄱㅈㄷㄱㅈㄷㄱ
+            </div>
+        </div>
+        <div class="notice_2">
+            <strong>
+                <p>[GALLARY]
+                    <span id="MOREBtn1">
+                        <a href="#">MORE+</a>
+                    </span>
+                </p>
+            </strong>
+            <div>
+                <a href="#">
+                    <img src="images/a3.jpg"/>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/a4.jpg"/>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="images/a5.jpg"/>
+                </a>
+            </div>
+        </div>
+        <div class="notice_3">
+            <strong>CUSTOMER</strong>
+            <h2>
+                <a href="">02-1004-1004</a>
+            </h2>
+            <div>
+                <p><a href="mailto:sabio@google.com">email:sabio@google.com</a></p>
+                <p>AM 09:00 ~ PM 07:00</p>
+                <p>친절히 모시겠습니다</p>
+            </div>
+        </div>
+    </div><!-- 공지사항 및 알림 공간 -->
+    <div class="bottom_box"><!--Bottom 알림-->
+       <div id="footer_text">
+            <div class="footer_box">
+                <div class="menu">
+                    <ul>
+                    <li><a href="/bizdemo27245/menu08/subpage19.php">이용약관</a></li>
+                    <li><a href="/bizdemo27245/menu08/subpage20.php">개인정보보호정책</a></li>
+                    <li><a href="/bizdemo27245/menu08/subpage21.php">이메일무단수집거부</a></li>
+                    <li class="last"><a href="http://map.naver.com/local/siteview.nhn?code=18687889">오시는길</a></li>
+                    </ul>
+                </div> <!-- menu-->
+            <div class="text">
+                <p>(주)에이콘이즈 에이콘아카데미 강남   |   대표: 최 건 식   |   사업자등록번호:220-88-42280   |   통신판매업신고증 : 제 2014-서울강남-01575   </p>
+                <p>COPYRIGHT(C) HBILAB. ALL RIGHTS RESERVED.</p>
+            </div> <!-- text-->
+            </div> <!-- footer_box-->
+            </div> <!--footer_text-->
+        </div><!--Bottom 알림-->
+</div><!--All 공간-->
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <center><h3>회원 가입</h3></center>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+            <div class="col-xs-3">
+            <label for="name">이름:</label><br>
+            <label for="userid">아이디:</label><br>
+
+            <label for="password">비밀번호:</label><br>
+            <label for="email">E-mail:</label><br>
+            <label for="phone">휴대폰번호 :</label><br>
+            <label for="address">주소:</label><br>
+            <label for="comment">추천인:</label><br><br>
+            <label for="sex">성별:</label><br>
+</div>
+<div class="col-xs-9">
+<input type="text" name="name"><br>
+<input type="text" name="userid">&nbsp;&nbsp;&nbsp;<button>중복확인</button><br>
+<input type="password" name="pwd"><br>
+<input type="text" id="email" name="email"/>
+    @
+    
+    <select name="em" id="em" class="height">
+        
+        <option value="1" selected>naver.com</option>
+        <option value="2">hanmail.net</option>
+        <option value="3">dreamwiz.com</option>
+        <option value="4">gmail.com</option>
+        <option value="5">hotmail.com</option>
+        
+    </select>
+    <button>중복확인</button>
+<br/>
+<input type="text" name="phonenumber"><br>
+<input type="text" name="address" id="address"><br>
+<input type="text" name="recommand"><br><br>
+남자<input type="radio" name="sex" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;여자<input type="radio" name="sex"><br>
+</div>
+</div>
+</center>
+            </div>
+            <div class="modal-footer">
+                <button id="del" class="btn btn-success" data-toggle="modal" data-target="#myModal2" data-dismiss="modal">회원가입</button>
+                <button class="btn btn-danger" data-dismiss="modal">취소</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 축하메세지 안쪽모달 -->
+<div id="myModal2" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+            
+            </div>
+            <div class="modal-body">
+                <h3>*********회원가입을 축하합니다*********</h3>
+            </div>
+            <div class="modal-footer">
+                <button id="cancle" class="btn btn-success" data-dismiss="modal">확인</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    $(window).scroll(function(){
+        if($(this).scrollTop() >= 600){                        //sub_catalog offset 도착시 fixed
+            $(".sub_catalog").addClass('sub_fix');
+            $(".content_box").css("margin-top","50px");
+        }
+        else{
+            $(".sub_catalog").removeClass('sub_fix');
+            $(".content_box").css("margin-top","0");
+        }
+    });
+    var reco_img = 0;   //recommend page 초기값                                      
+    $(".rc_leftBtn").click(function(){                         //recommend 왼쪽버튼시 이동
+        if(reco_img == 0){
+            return;
+        }
+        else{
+            reco_img -= 1;
+            $(".rc_img").animate({"left":"+=34%"},1000);
+        }
+    });
+    $(".rc_rightBtn").click(function(){                      //recommend 오른쪽버튼시 이동
+        if(reco_img == 2){
+            return;
+        }
+        else{
+            reco_img += 1;
+            $(".rc_img").animate({"left":"-=34%"},1000);
+        }
+    });
+    $("#korean").click(function(){            // 메인BAR에 한식 누르면 sub_catalog로 이동
+        $(".Korean1").siblings().hide();
+        $(".Korean1").css("display","block");
+    });
+    $("#Chinese").click(function(){         // 메인BAR에 중식 누르면 sub_catalog로 이동
+        $(".Chinese1").siblings().hide();
+        $(".Chinese1").css("display","block");
+    });
+    $("#Japanese").click(function(){        // 메인BAR에 일식 누르면 sub_catalog로 이동
+        $(".Japanese1").siblings().hide();
+        $(".Japanese1").css("display","block");
+    });
+
+    $(".smoothSS a").smoothScroll({offset:-70});
+</script>
+</html>

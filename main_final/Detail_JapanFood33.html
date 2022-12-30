@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.touchSwipe.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="each_css/place.css"/>
+    <link rel="stylesheet" href="each_css/catalog.css"/>
+    <link rel="stylesheet" href="each_css/sub_catalog.css"/>
+    <link rel="stylesheet" href="each_css/best.css"/>
+    <link rel="stylesheet" href="each_css/Detail_JapanFood33.css"/>
+	<meta charset="UTF-8">
+    <title>Detail_JapanFood.html</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<style>
+        @font-face{font-family:'12롯데마트행복Medium 보통'; src:url('each_css/Lotte_Medium.ttf')}
+        
+        @media (max-width: 500px){
+            .all{
+                width: 500px;
+            }
+        }
+
+        body{                     /*카탈로그 공간 margin-top*/
+            margin-top:70px; 
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        #myCarousel img{
+            width:100%;
+            height:600px;
+        }
+        .all {
+        	width: 100%;
+            margin-top: 200px;
+        }
+        .row1{
+        	margin-top: 70px;
+        	width:100%;
+        	
+        }
+
+
+		
+
+		.container1{
+			margin: 0 auto;
+		}
+
+		
+
+		.wrapper1{
+			-webkit-perspective: 1000px;
+			-webkit-perspective-origin: 50% 50%;
+			margin: 0 auto;
+			border: 1px solid red;
+			height: 400px;
+		}
+		.carousel{
+			-webkit-transform-style: preserve-3d;
+			position: relative;
+			height: 400px;
+			/*-webkit-transition: -webkit-transform 1s ease-out;*/
+		}
+		.transition{
+			-webkit-transition: -webkit-transform 0.4s ease-out;
+		}
+		.carousel > div{
+			position: absolute; /* 8개의 div 겹치기*/
+			width: 100%;
+			height: 400px;
+			border: 1px solid green
+		}
+		p{
+			position: relative;
+		}
+
+		span{
+			padding-top: 200px;
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="all"> <!--page 꽉찬 화면-->
+
+	<div class="catalog navbar-fixed-top">
+        <div class="logo">
+            <a href="#" id="logolink">Sabio</a>
+        </div>                <!--page 꽉찬 화면-->
+
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">한식</a>
+        </div>
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">일식</a>
+        </div>
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">중식</a>
+        </div>
+        <div class="catalogbar">
+            <a href="#" class="cataloglink">게시판</a>
+        </div>
+
+        <div class="searchBar">                 <!-- 검색창 -->
+            <input type="text">                     <!-- 검색창 -->
+            <button>검색</button>
+            <span>
+            <a href="">로그인</a>
+            </span>
+            <span>
+                <a href="">회원가입</a>
+            </span>
+            <span>
+                <a href="">고객센터</a>
+            </span>
+        </div>
+<div class="row1">
+	<div class="leftarea" style="border: 1px solid red">
+	
+		
+		<div class="wrapper1">
+			<div id="Carousel1" class="carousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+				
+				<div class="item1"><a data-toggle="tab" href="#aa"><img src="images/11.png" alt=""></a></div>
+				<div class="item2"><a data-toggle="tab" href="#bb"><img src="images/22.png" alt=""></a></div>
+				<div class="item3"><a data-toggle="tab" href="#cc"><img src="images/33.png" alt=""></a></div>
+				<div class="item4"><a data-toggle="tab" href="#dd"><img src="images/44.png" alt=""></a></div>
+				
+			</div>
+
+<span id="prevBtn" class="glyphicon glyphicon-chevron-left left carousel-control "></span>
+<span id="nextBtn" class="glyphicon glyphicon-chevron-right right carousel-control"></span>
+		</div>
+		
+		<br><br>
+		<div class="tab-content">
+		
+		<div class="tab-pane fade in active">
+			<br><p style="text-align: center; font-size: 30px; font-weight: bold;">오꼬노미야키</p>
+		</div>
+		<div class="tab-pane fade">
+			<br><p style="text-align: center; font-size: 30px; font-weight: bold;">초밥</p>
+		</div>
+		<div class="tab-pane fade ">
+			<br><p style="text-align: center; font-size: 30px; font-weight: bold;">판모밀</p>
+		</div>
+		<div class="tab-pane fade">
+			<br><p style="text-align: center; font-size: 30px; font-weight: bold;">돈까스돈부리</p>
+		</div>
+
+		
+
+		</div>
+
+
+	</div>
+
+	<div class="rightarea" style="border:1px solid blue">
+		<div class="tab-content3">
+			<div class="tab-pane fade in active " id="aa">
+	          <p  style= "color:red;font-size: 20px; position: absolute; ">STEP1.고기와 양배추를 잘게썰어 준비한다.<br><br>
+	          STEP2.잘해놓은 반죽에 고기와 양배추를 넣는다.<br><br>
+	          STEP3.기름을 두른 후라이팬에 노릇할때 까지 굽는다.<br><br>
+	          STEP4.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP5.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP6.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP7.다익으면 위에 가쓰오부시와 소스를 올린다.</p>
+	        </div>
+	        <div class="tab-pane fade  " id="bb">
+	          <p style= "color:blue;font-size: 20px; position: absolute; ">STEP1.고기와 양배추를 잘게썰어 준비한다.<br><br>
+	          STEP2.잘해놓은 반죽에 고기와 양배추를 넣는다.<br><br>
+	          STEP3.기름을 두른 후라이팬에 노릇할때 까지 굽는다.<br><br>
+	          STEP4.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP5.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP6.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP7.다익으면 위에 가쓰오부시와 소스를 올린다.</p>
+	        </div>
+	        <div class="tab-pane fade " id="cc">
+	          <p style= "color:green;font-size: 20px; position: absolute;">STEP1.고기와 양배추를 잘게썰어 준비한다.<br><br>
+	          STEP2.잘해놓은 반죽에 고기와 양배추를 넣는다.<br><br>
+	          STEP3.기름을 두른 후라이팬에 노릇할때 까지 굽는다.<br><br>
+	          STEP4.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP5.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP6.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP7.다익으면 위에 가쓰오부시와 소스를 올린다.</p>
+	        </div>
+	        <div class="tab-pane fade " id="dd">
+	          <p style= "color:yellow;font-size: 20px; position: absolute;  ">STEP1.고기와 양배추를 잘게썰어 준비한다.<br><br>
+	          STEP2.잘해놓은 반죽에 고기와 양배추를 넣는다.<br><br>
+	          STEP3.기름을 두른 후라이팬에 노릇할때 까지 굽는다.<br><br>
+	          STEP4.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP5.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP6.다익으면 위에 가쓰오부시와 소스를 올린다.<br><br>
+	          STEP7.다익으면 위에 가쓰오부시와 소스를 올린다.</p>
+	        </div>
+		</div>
+
+	</div>
+</div>
+<marquee behavior="alternate" direction="left">
+	<h2 style="color:blue;">**방문해주셔서 감사합니다**</h2>
+</marquee>
+
+
+
+
+<script>
+	var tz, angle;
+		initCarousel(); // carousel 초기화 
+
+		// 창의 크기가 바뀌었을때 
+		$(window).resize(function(){
+			initCarousel(); // carousel 초기화 
+		});
+
+		function initCarousel(){
+			//페이지 로딩 되는 시점에 .carousel 의 폭을 얻어온다.
+			var width = $(".wrapper1").width();
+			// translateZ 값 얻어내기 
+			var info = getAngleNtz(4, width);
+			angle = info.angle;
+			tz = info.tz;
+			//.carousel 뒤로 밀기 
+			$(".carousel").css("-webkit-transform","translateZ(-"+tz+"px)");
+			// div 를 8 각형으로 배치하기 
+			$(".carousel > div").each(function(index, item){
+				var ang = angle*index;
+				var value = "rotateY("+ang+"deg) translateZ("+tz+"px)";
+				$(item).css("-webkit-transform", value);
+			});
+			//원래 회전량 복구해주기
+			rotate();
+		}
+
+		// y 축 회전값을 저장할 변수 
+		var rY=0;
+		var currentIndex=0;
+
+		$("#prevBtn").click(function(){
+			rY += angle;
+			rotate2();
+			currentIndex--;
+			if(currentIndex==-1){
+				currentIndex = 3;
+
+			}
+			$(".tab-content > div").eq(currentIndex).addClass("active in").siblings().removeClass("active in");
+			$(".tab-content3 > div").eq(currentIndex).addClass("active in").siblings().removeClass("active in");
+			
+		});
+		$("#nextBtn").click(function(){
+			rY -= angle;
+			rotate2();
+
+			currentIndex++;
+			if(currentIndex==4){
+				currentIndex = 0;
+			}
+			$(".tab-content > div").eq(currentIndex).addClass("active in").siblings().removeClass("active in");
+			$(".tab-content3 > div").eq(currentIndex).addClass("active in").siblings().removeClass("active in");
+		});
+
+		// .wrapper1 에 터치 이벤트 처리
+		var startrY = 0;
+
+		$(".wrapper1").swipe({
+			swipeStatus:function(e,phase,direction,distance){
+				
+				if(phase == "start"){
+					startrY = rY;
+				}
+				else if(phase == "move"){
+					if(direction == "left"){
+						rY = startrY - (angle*distance)/600;
+					}
+					else if(direction == "right"){
+						rY = startrY + (angle*distance)/600;
+					}
+					rotate2();
+				}
+				else if(phase == "end"){
+					if(direction == "left"){
+						rY = startrY - angle;
+					}
+					else if(direction == "right"){
+						rY = startrY + angle;
+					}
+					rotate2();
+				}
+				else if(phase == "cancel"){
+					rY = startrY;
+					rotate2();
+				}
+			}
+		})
+
+		
+
+		// .carousel 을 회전 시키는 함수 
+		function rotate(){
+			var value="translateZ(-"+tz+"px) rotateY("+rY+"deg)";
+			$(".carousel").css("-webkit-transform",value);
+		};
+
+		
+		function rotate2(){
+			//트랜지션 효과 주기 
+			$(".carousel")
+			.addClass("transition")
+			.one("transitionend", function(){
+				//트랜지션이 끝났을때 트랜지션 클래스 제거 
+				$(this).removeClass("transition");
+			});
+
+			var value="translateZ(-"+tz+"px) rotateY("+rY+"deg)";
+			$(".carousel").css("-webkit-transform",value);
+		}
+
+
+		//n 각형의 폭을 함수에 전달하면 div 를 배치할때 rotateY 값과 translateZ 가 Object 로 리턴되는 함수 
+		function getAngleNtz(n, width) {
+		var angle = Math.round(360 / n);
+		var tz = Math.round((width / 2) / Math.tan((angle * Math.PI) / (2 * 180)));
+		var obj = {
+		  angle: angle,
+		  tz: tz
+		};
+		return obj;
+		}	
+</script>
+</body>
+</html>

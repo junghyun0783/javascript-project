@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#main_bestclick_text ul{
+	height: 350px;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#main_bestclick_text ul li{
+	padding: 7.36% 0%;
+	/*padding-left: 140px;*/
+	text-align: center;
+	border-bottom: 2px solid #cecece;
+	border-radius: 3%;
+	font-family: "Lotte_Medium";
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#main_bestclick_text ul li:hover{
+	background-color: #d3d3d3;
+	-webkit-transition: all 0.5s linear;
+}
+
+.hover_active{
+	background-color: #d3d3d3;
+	-webkit-transition: all 0.5s linear;
+}
+
+.carousel-inner img{
+	width: 700px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.carousel-inner .item{
+	height: 350px;
+}
+
+#main_bestclick_photo{
+	height: 350px;
+}

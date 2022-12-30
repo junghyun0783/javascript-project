@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.menu_inner_frame{
+	width: 100%;
+	height: 2000px;
+	/*border: 1px solid blue;*/
+	margin-top: 50px;
+}
+
+.menu_inner_total_frame{
+	width: 60%;
+	height: 100%;
+	/*border-left: 1px solid red;*/
+	/*border-top: 1px solid red;*/
+	margin: 0 auto;
+	
+}
+
+.menu_inner_left_frame{
+	float: left;
+	width: 20%;
+	height: 30%;
+}
+
+.menu_inner_right_frame{
+	float: right;
+	width: 75%;
+	height: 100%;
+	padding-top: 7.5%;
+}
+
+.menu_inner_left_top{
+	width: 100%;
+	height: 160px;
+	background-color: #F15F5F;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 10%;
+	color: #EAEAEA;
+}
+
+.menu_inner_left_bottom{
+	width: 100%;
+	height: 420px;
+	/*background-color: gray;*/
+}
+
+.menu_inner_left_bottom ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.menu_inner_left_bottom ul li{
+	text-decoration: none;
+	padding: 12% 0;
+	border-bottom: 1.5px solid #FFC4EB;
+	font-size: 20px;
+	border-radius: 4px;
+}
+
+.menu_inner_left_bottom ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.blank{
+	width: 100%;
+	height: 15%;
+}
+
+.line{
+	width: 90%;
+	border: 1px solid black;
+	margin: 5% 0;
+}
+
+.rice_box{
+	width: 100%;
+	height: 13%;
+}
+
+.rice_img{
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+
+.rice_txt{
+	float: left;
+	width: 50%;
+	height: 100%;
+	/*background-color: #F15F5F;*/
+	color: #EAEAEA;
+}
+
+.rice_img img{
+	width: 100%;
+	height: 100%;
+}
+
+.left_fix{                /*offset 도착시 fix 클래스 추가*/
+	position:fixed;
+	top:120px;
+	width: 12%;
+}
